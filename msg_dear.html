@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<script>
+	sessionStorage.setItem('common_1', JSON.stringify(['너 연애/결혼은 언제 할거니?', '취업은 어디로 할거니?', '연봉은 얼마나 되니?', '취직은 언제 할거니?', '애인은 있니?']));
+	//sessionStorage.setItem('common_2', JSON.stringify([''])); -- 초기화시
+	
+	$(document).ready(function () {
+	   var items = JSON.parse(sessionStorage.getItem('common_1'));
+	   var items2 = JSON.parse(sessionStorage.getItem('common_2'));
+	   
+	   for(var ii=0; ii<items.length; ii++) {
+		  var html = "";
+        	
+        	html = '<li class="mode_box_li">' + items[ii] + '</li>';
+        	
+        	$('#mode_box_ui').append(html);
+	   }
+	   
+	   for(var ii=0; ii<items2.length; ii++) {
+		  var html = "";
+        	
+        	html = '<li class="mode_box_li">' + items2[ii] + '</li>';
+        	
+        	$('#mode_box_ui').append(html);
+	   }
+	});
+
+	 $(function () {
+		
+		
+	    var input = document.getElementById("vd_text");
+	
+	    input.addEventListener("keyup", function (event) {
+	      if (event.keyCode === 13) {
+	        event.preventDefault();
+	        $('#exampleModal').modal('show');
+	      }
+	    });
+	
+	    $('#exampleModal').on('shown.bs.modal', function () {
+	        $("#vd_modal").removeClass("vd_box_show");
+	        var text = $("#vd_text").val();
+	        
+	        if(text == "") {
+	            $('#exampleModal').modal('hide');
+	            alert("먼저 파도에 적을 내용을 입력해주세요.");
+	        } else {
+	            $("#vd_text").val("");
+	            $("#vd_modal").addClass("vd_box_show");
+	            $("#pado_modal").text(text);
+	            $("#pado_modal").addClass("vd_box_back");
+	            
+	            var time = 1;
+	            var timer = setInterval(function() {
+	                time = time + 1;
+	                if(time == 5) {
+	                    //$("#pado_modal").text("");
+	                    $("#pado_modal").fadeOut(2000, "linear", function(){
+	                        $("#pado_modal").text("");
+	                        time = 1;
+	                        clearInterval(timer);
+	                        $('#exampleModal').modal('hide');
+	                        $("#pado_modal").show();
+	                    });
+	                }
+	            }, 1000);
+	        }
+	    })
+	
+	});
+	function fnAddText() {
+		var text = $('#vd_text').val();
+		items2 = JSON.parse(sessionStorage.getItem('common_2'));
+		
+		if(text == "") {
+            alert("먼저 파도에 적을 내용을 입력해주세요.");
+        } else {
+        	var html = "";
+        	
+        	html = '<li class="mode_box_li">' + text + '</li>';
+        	
+        	$('#mode_box_ui').append(html);
+        	
+        	if(items2 != null) {
+				items2.push(text);
+			} else {
+				items2 = [text];
+			}
+        	//console.log(items2);
+        	sessionStorage.setItem('common_2', JSON.stringify(items2));
+        }
+	}
+</script>
+  
+</head>
+
+<body>
+	<video id="section_01_vd" class="panels" loop autoplay muted>
+        <source src="./video/pexels_videos_2439510 (1080p).mp4" type="video/mp4" />
+    </video>
+    <audio src="./video/wave_soundes.mp3" autoplay loop></audio>
+    <div class="msform">
+        <ul id="step_3" class="progressbar" style="display: flex;">
+            <input id="vd_text" type="text" onKeypress="javascript:if(event.keyCode==13) {fnAddText()}" placeholder="설 연휴 동안이나 살아오면서 들었던 최악의 말은 무엇인가요? 클릭 후 작성해보세요." value="">
+            <button type="button" id="vd_btn" onclick="fnAddText()"></button>
+        </ul>
+    </div>
+	<div>
+	    <div class="mode_box">
+	    	<div>
+	    		<ul id="mode_box_ui" style="margin-bottom: 0;">
+	    		</ul>
+	    	</div>
+	    </div>
+    </div>
+    
+    <h3>
+    	
+    </h3>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/common.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+  <div href="#" id="section_0_1" class="panels" >
+	<div class="msform" style="height: 100%;">
+	      <div id="step_bottom">
+	      	<button tyoe="button" id="step_btn" class="btn" onclick="fnMovePage('#section_0_1', '#section_1')"></button>
+	      </div>
+	 </div>
+  </div>
+  <div id="section_1" class="panels none">
+	<div id="section_scroll">
+	    <div class="msform">
+	      <ul id="step_1" class="progressbar">
+	        <h3 class="question">1번. 나는 갈등을 피하며, 조화와 평화를 중요하게 생각하는 평화주의자이다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_1', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_1', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_1', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_1', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_2" class="progressbar">
+	        <h3 class="question">2번. 나는 이성적이고 지적으로 모든 것을 판단하며, 주변 세계를 냉철하게 관찰한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_2', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_2', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_2', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_2', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_3" class="progressbar">
+	        <h3>3번. 나는 미래에 대한 열정을 가지고 있으며, 어린아이처럼 명량하고 순진한 기질을 가지고 있다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_3', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_3', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_3', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_3', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_4" class="progressbar">
+	        <h3>4번. 나는 감성적이며 예술가적인 기질을 가지고 있어 혼자서의 시간과 독특한 취미를 즐긴다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_4', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_4', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_4', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_4', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_5" class="progressbar">
+	        <h3>5번. 나는 주위 환경과 감정에 민감하게 반응하며, 때로는 이방인처럼 느끼거나 혼자 우울해진다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_5', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_5', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_5', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_5', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_6" class="progressbar">
+	        <h3>6번. 나는 능력을 최대한 발휘하기 위해 많은 시간을 투자하며, 결과와 목표 달성을 최우선으로 생각한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_6', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_6', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_6', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_6', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_7" class="progressbar">
+	        <h3>7번. 나는 낙관적이며, 주변 사람들에게 유쾌하고 편하게 대한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_7', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_7', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_7', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_7', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_8" class="progressbar">
+	        <h3>8번. 나의 관심사는 다른 사람들을 도와주고, 나에게 의지하는 것을 좋아한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_8', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_8', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_8', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_8', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_9" class="progressbar">
+	        <h3>9번. 나는 다른 사람들과 함께 일하는 것을 좋아한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_9', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_9', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_9', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_9', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_10" class="progressbar">
+	        <h3>10번. 나는 사람들을 관심있게 대하고 보살피려 한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_10', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_10', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_10', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_10', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_11" class="progressbar">
+	        <h3>11번. 나는 실패를 두려워하고, 사람들에 대한 배려보다는 일의 성과를 우선시한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_11', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>f
+	        <a href="#" onclick="fnMoveNextContent('step_11', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_11', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_11', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_12" class="progressbar">
+	        <h3>12번. 나는 안전한 해결책을 원하고 되도록 갈등을 피한다</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_12', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_12', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_12', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_12', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_13" class="progressbar">
+	        <h3>13번. 나는 사람들을 지시하고 동기를 부여하며, 사람들에게 영향력이 있는 사람이다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_13', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_13', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_13', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_13', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_14" class="progressbar">
+	        <h3>14번. 나는 자제력이 있으며 다른 사람들의 신임을 얻을 수 있다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_14', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_14', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_14', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_14', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_15" class="progressbar">
+	        <h3>15번. 결과에 대한 두려움이 있지만, 모든 일에서 안전과 신뢰를 중요하게 생각한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_15', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_15', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_15', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_15', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_16" class="progressbar">
+	        <h3>16번. 나는 모든 일을 깊이 생각하고, 원칙에 따라 완벽을 추구한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_16', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_16', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_16', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_16', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_17" class="progressbar">
+	        <h3>17번. 나는 문제나 관심사에 깊이 통찰하며 집중적으로 생각하며, 이를 이해하는 데 시간을 투자한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_17', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_17', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_17', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_17', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_18" class="progressbar">
+	        <h3>18번. 나는 상황에 빠르게 적응하면서도, 일의 성취와 성공을 중요하게 생각한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_18', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_18', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_18', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_18', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_19" class="progressbar">
+	        <h3>19번. 나는 변화와 모험을 추구하며, 위험을 감수하는 새로운 경험을 갈망한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_19', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_19', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_19', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_19', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_20" class="progressbar">
+	        <h3>20번. 나는 명확한 지침과 잘 훈련된 조직에서 최상의 능률을 발휘하며, 충성할 만한 사람이나 집단에 헌신한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_20', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_20', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_20', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_20', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_21" class="progressbar">
+	        <h3>21번. 나는 몽상가적이며, 본인의 감정과 행동 동기에 대해 깊게 고민하고 회의적으로 생각하기도 한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_21', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_21', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_21', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_21', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_22" class="progressbar">
+	        <h3>22번. 나는 강한 자신감으로 어려운 주제도 이야기하며, 사람들을 설득하고 통제한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_22', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_22', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_22', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_22', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_23" class="progressbar">
+	        <h3>23번. 나는 지도자로서의 강한 기질과 영향력을 가지고 있으며, 의사 결정 시에도 이를 발휘한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_23', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_23', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_23', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_23', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_24" class="progressbar">
+	        <h3>24번. 나는 친한 사람과의 관계를 중요하게 생각하여 영원한 우정을 유지하려고 노력한다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_24', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_24', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_24', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_24', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_25" class="progressbar">
+	        <h3>25번. 나는 원만하고 태평한 성격으로, 감정의 동요가 적어 사람들과 편안하게 지낸다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_25', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_25', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_25', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_25', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_26" class="progressbar">
+	        <h3>26번. 권위나 규칙보다는 개인의 생각과 판단을 중시하며, 개인생활에 더 큰 관심을 가진다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_26', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_26', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_26', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_26', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <ul id="step_27" class="progressbar">
+	        <h3>27번. 나는 근면하며, 책임감과 정의감이 강하다.</h3>
+	        <a href="#" onclick="fnMoveNextContent('step_27', 'set_1', 1)">
+	          <li class="set_1">거의 그렇지 않다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_27', 'set_2', 2)">
+	          <li class="set_2">그렇지 않은 편이다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_27', 'set_3', 3)">
+	          <li class="set_3">그렇다</li>
+	        </a>
+	        <a href="#" onclick="fnMoveNextContent('step_27', 'set_4', 4)">
+	          <li class="set_4">매우 그렇다</li>
+	        </a>
+	      </ul>
+	      <fieldset>
+        <input type="button" onclick="fnMovePage('#section_1', '#section_0_1')" name="next" id="prev"
+          class="next action-button2" value="" style="float: left;" />
+      </fieldset>
+	    </div>
+	    
+    </div>
+  </div>
+ </div>
+
+  <div id="section_final" class="panels none">
+	<div class="msform animate-bottom" style="height: 100%;">
+	      
+	      <div id="step_final_down">
+			<h3 class="final_bk_wh">당신에게 온 편지를 수신중입니다...</h3>  
+		  </div>
+	 </div>
+  </div>
+
+<div id="load_msg" class="none">  
+	<div id="load_msg_box">
+		<div id="loader" ></div>
+	</div>
+</div>
+
+  <div id="section_dtl" class="panels none" >
+	  
+  </div>
+  
+</body>
